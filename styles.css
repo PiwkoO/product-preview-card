@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+:root {
+  /* Primary */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --background: hsl(30, 38%, 92%);
+
+  /* Neutral */
+  --font-primary: hsl(212, 21%, 14%);
+  --font-decoration: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --hover: hsl(157, 43%, 18%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  background-color: var(--background);
+}
+
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 16px;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.product-image {
+  height: 240px;
+  background-image: url(./images/image-product-mobile.jpg);
+  background-size: cover;
+}
+
+.product-type {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--font-decoration)
+}
+
+.product-name {
+  margin-bottom: 16px;
+  font-family: 'Fraunces', 'Helvetica', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--font-primary);
+}
+
+.product-desc {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  color: var(--font-decoration)
+}
+
+.price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 0 20px;
+}
+
+.product-price {
+  font-family: 'Fraunces', 'Helvetica', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--dark-cyan);
+}
+
+.product-price.product-price--old {
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: var(--font-decoration)
+}
+
+.add-to-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--dark-cyan);
+  cursor: pointer;
+}
+
+.add-to-card:hover,
+.add-to-card:focus {
+  background-color: var(--hover);
+}
+
+.cart-icon {
+  content: url(./images/icon-cart.svg);
+  width: 14px;
+  height: 16px;
+}
