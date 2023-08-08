@@ -39,6 +39,7 @@ body {
   flex-direction: column;
   border-radius: 10px;
   margin: 16px;
+  max-width: 600px ;
   background-color: var(--white);
   overflow: hidden;
 }
@@ -50,7 +51,8 @@ body {
 }
 
 .product-image {
-  height: 240px;
+  min-width: 300px;
+  min-height: 240px;
   background-image: url(./images/image-product-mobile.jpg);
   background-size: cover;
 }
@@ -123,4 +125,30 @@ body {
   content: url(./images/icon-cart.svg);
   width: 14px;
   height: 16px;
+}
+
+@media (min-width: 650px) {
+  .product-card {
+    flex-direction: row;
+  }
+  
+  .product-image {
+    background-image: url(images/image-product-desktop.jpg);
+  }
+
+  .product-info {
+    padding: 32px;
+  }
+
+  .product-type {
+    margin-bottom: 20px;
+  }
+
+  .product-name {
+    margin-bottom: 24px;
+  }
+
+  .price-wrapper {
+    padding: 30px 0;
+  }
 }
