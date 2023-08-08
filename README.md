@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution on frontendmentor.io]()
-- [Live preview]()
+- [Solution on frontendmentor.io](https://www.frontendmentor.io/solutions/product-preview-card-component-Mi9hAXv8R6)
+- [Live preview](https://piwkoo.github.io/product-preview-card/)
 
 ## My process
 
